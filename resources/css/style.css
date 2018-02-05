@@ -1,0 +1,91 @@
+body {
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+  font-family: Helvetica;
+  margin: 0;
+}
+
+/*Header & Navigation*/
+header {
+  font-size: 22px;
+  font-weight: bold;
+  height: 69px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  }
+
+header .logo {
+  display: flex;
+  height: 50px;
+  padding-left: 10px;
+}
+
+header nav span a {
+display: inline-block;
+padding: 10px;
+text-decoration: underline;
+margin: 0px 7px;
+}
+
+/* Main Section*/
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+/*Section 1 */
+
+.hotelText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 1200px;
+  height: 700px;
+  z-index: 5;
+}
+
+
+.section1 img {
+  width: 100%;
+  z-index: -5;
+}
+
+
+/*Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+footer  h2 {
+  text-align: center;
+  align-items: center;
+  padding: 9px;
+  margin: 0;
+}
+
+footer  h5 {
+  text-align: center;
+  align-items: center;
+  padding: 9px;
+  margin: 0;
+}
+
+footer .copyright h5 {
+  text-align: left;
+}
