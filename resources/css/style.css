@@ -1,91 +1,100 @@
-body {
-  background-color: black;
-  color: seashell;
-  opacity: 0.9;
+html {
   font-family: Helvetica;
-  margin: 0;
+  font-size: 18px;
+  background-color: black;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  background-color: black;
+  margin: 0px auto;
 }
 
 /*Header & Navigation*/
-header {
-  font-size: 22px;
-  font-weight: bold;
-  height: 69px;
+
+.secret {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid seashell;
-  position: fixed;
-  width: 100%;
-  background-color: black;
-  }
-
-header .logo {
-  display: flex;
-  height: 50px;
-  padding-left: 10px;
-}
-
-header nav span a {
-display: inline-block;
-padding: 10px;
-text-decoration: underline;
-margin: 0px 7px;
-}
-
-/* Main Section*/
-
-.mainContainer {
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-}
-
-/*Section 1 */
-
-.hotelText {
-  display: flex;
-  flex-direction: column;
+  color: white;
+  font-weight: bold;
   justify-content: center;
-  margin: auto;
-  width: 1200px;
-  height: 700px;
-  z-index: 5;
+  padding: 1rem;
 }
 
-
-.section1 img {
-  width: 100%;
-  z-index: -5;
-}
-
-
-/*Footer */
-
-footer {
+.main {
+  background-image: url(../images/nightHotel.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
   display: flex;
   flex-direction: column;
-  height: 200px;
-  width: 1200px;
-  margin: auto;
-  padding-top: 20px;
+  font-weight: bold;
 }
 
-footer  h2 {
-  text-align: center;
+.main .support-text {
+  color: white;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rem;
+  margin-left: 20rem;
+  padding: 1rem;
+}
+
+.main .support-text h2 {
+  text-align:left;
+}
+
+header nav ul {
+  color: white;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  padding: 9px;
-  margin: 0;
+  padding: 0.75rem 0rem;
+  justify-content: space-around;
 }
 
-footer  h5 {
-  text-align: center;
-  align-items: center;
-  padding: 9px;
-  margin: 0;
+/*Main Section*/
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding-top: 1rem;
 }
 
-footer .copyright h5 {
+.welcome-text {
   text-align: left;
+}
+
+.welcome-text h1,
+h2 {
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+
+/*Footer*/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: black;
+  height: 5rem;
+  align-items: center;
+  text-align: left;
+  padding-left: 2rem;
 }
